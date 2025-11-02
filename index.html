@@ -6,7 +6,6 @@
   <title>Neel Pendharkar — Music · Code · More</title>
   <meta name="description" content="Music, code, & design — a living studio. Minimal personal site." />
 
-  <!-- Simple, elegant CSS (single file). Tweak fonts/colors below. -->
   <style>
     :root{
       --bg:#0f1115;
@@ -95,7 +94,23 @@
     .track{display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;background:#071018;border:1px solid rgba(255,255,255,0.02)}
     .track small{color:var(--muted)}
 
-    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:18px 10px}
+    footer{margin-top:12px;text-align:center;color:var(--muted);font-size:13px;padding:10px 0}
+
+    /* fix for contact */
+    #contact.card {
+      padding:18px;
+      margin-bottom:0;
+    }
+
+    #contact h3 {
+      margin-top:0;
+      margin-bottom:6px;
+    }
+
+    #contact p {
+      margin:4px 0 0;
+      font-size:14px;
+    }
 
     /* responsive */
     @media (max-width:880px){
@@ -138,7 +153,6 @@
           </div>
         </div>
 
-        <!-- quick info card -->
         <div style="width:300px">
           <div style="font-size:13px;color:var(--muted);margin-bottom:10px">Today</div>
           <div style="background:#061016;padding:14px;border-radius:12px">
@@ -157,7 +171,7 @@
           <div class="projects-list" style="margin-top:12px">
             <article class="project">
               <h4>Working at PTC</h4>
-              <p>DevOps that scalese and endures. Currently designer and Implementer for Mathcad DevOps</p>
+              <p>DevOps that scales and endures. Currently designer and implementer for Mathcad DevOps.</p>
             </article>
             <article class="project">
               <h4>PyanoBuddy — A Piano Companion Python Script</h4>
@@ -169,26 +183,22 @@
 
         <aside class="card" id="music" aria-labelledby="music-heading">
           <h3 id="music-heading">Music & quick plays</h3>
-
           <div class="music-list" style="margin-top:12px">
-            <!-- Replace src with your hosted audio or SoundCloud/Embed -->
             <div class="track">
               <div style="flex:1">
                 <div style="font-weight:600">Count Stygian</div>
-                    <small>Raw Indian English Rock Music. I generally do everything myself. A friend co-writes the lyrics.</small>
-                    <div> <a href = "https://open.spotify.com/artist/3helJoW6FT7Y83tAaOdEUp?si=2mZ6mm4bRR2YGFs7bXNPaw" style="color:var(--accent);text-decoration:none"> Listen on Spotify </a></div>
-                <small></small>
+                <small>Raw Indian English Rock Music. I generally do everything myself. A friend co-writes the lyrics.</small>
+                <div><a href="https://open.spotify.com/artist/3helJoW6FT7Y83tAaOdEUp?si=2mZ6mm4bRR2YGFs7bXNPaw" style="color:var(--accent);text-decoration:none">Listen on Spotify</a></div>
               </div>
             </div>
 
             <div class="track">
               <div style="flex:1">
                 <div style="font-weight:600">Asiir</div>
-                <small>Raw Indian Hindi Rock Music.  I generally do everything myself. A friend co-writes the lyrics.</small>
-                <div> <a href = "https://open.spotify.com/artist/5f8IpiQjnWsIoXleaR2UIB?si=q51-bcXZSLWjUN961XJtNw" style="color:var(--accent);text-decoration:none"> Listen on Spotify </a></div>
+                <small>Raw Indian Hindi Rock Music. I generally do everything myself. A friend co-writes the lyrics.</small>
+                <div><a href="https://open.spotify.com/artist/5f8IpiQjnWsIoXleaR2UIB?si=q51-bcXZSLWjUN961XJtNw" style="color:var(--accent);text-decoration:none">Listen on Spotify</a></div>
               </div>
             </div>
-
           </div>
         </aside>
       </div>
@@ -196,11 +206,10 @@
       <!-- Journal -->
       <section class="card" id="journal" aria-labelledby="journal-heading">
         <h3 id="journal-heading">Journal & notes</h3>
-            <p><a href = "https://neelpendharkar.substack.com/" style="color:var(--accent);text-decoration:none"> <strong>Substack</strong> </a> — Half-Baked writings for the fully baked </p>
-            <p><strong>Oneness</strong> — They teach us separation. It's wrong.</p>
-            <p><strong>Diligence</strong> — I always get the basics right. I try my best not to deviate.</p>
-            <p><strong>Spontaneity</strong> — Do something fresh. Always.</p>
-        </div>
+        <p><a href="https://neelpendharkar.substack.com/" style="color:var(--accent);text-decoration:none"><strong>Substack</strong></a> — Half-Baked writings for the fully baked</p>
+        <p><strong>Oneness</strong> — They teach us separation. It's wrong.</p>
+        <p><strong>Diligence</strong> — I always get the basics right. I try my best not to deviate.</p>
+        <p><strong>Spontaneity</strong> — Do something fresh. Always.</p>
       </section>
 
       <!-- Contact -->
@@ -210,7 +219,7 @@
       </section>
 
       <footer class="card" role="contentinfo">
-        <div style="font-size:13px;color:var(--muted)">Handle with care.</div>
+        <div>Handle with care.</div>
       </footer>
     </main>
   </div>
