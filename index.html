@@ -96,22 +96,6 @@
 
     footer{margin-top:12px;text-align:center;color:var(--muted);font-size:13px;padding:10px 0}
 
-    /* fix for contact */
-    #contact.card {
-      padding:18px;
-      margin-bottom:0;
-    }
-
-    #contact h3 {
-      margin-top:0;
-      margin-bottom:6px;
-    }
-
-    #contact p {
-      margin:4px 0 0;
-      font-size:14px;
-    }
-
     /* responsive */
     @media (max-width:880px){
       .grid-2{grid-template-columns:1fr}
@@ -134,6 +118,7 @@
       <nav aria-label="Main navigation">
         <a href="#work">Projects</a>
         <a href="#music">Music</a>
+        <a href="#reading">Reading</a>
         <a href="#journal">Journal</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -201,6 +186,13 @@
           </div>
         </aside>
       </div>
+
+      <!-- Reading & Typing -->
+      <section class="card" id="reading" aria-labelledby="reading-heading">
+        <h3 id="reading-heading">Reading & Typing</h3>
+        <p><strong>Currently Typing:</strong> Frankenstein - Mary Shelley</p>
+        <p><strong>Currently Reading:</strong> Rework - David Heinemeier Hansson & Jason Fried</p>
+      </section>
 
       <!-- Journal -->
       <section class="card" id="journal" aria-labelledby="journal-heading">
