@@ -81,6 +81,35 @@ body {
   align-items: stretch;
 }
 
+.routine {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.routine summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 58px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  list-style: none;
+}
+
+.routine summary::-webkit-details-marker { display: none; }
+
+.routine-action {
+  color: var(--blue-light);
+  font-size: 0.76rem;
+}
+
+.routine[open] .routine-action::before { content: "Hide"; }
+.routine[open] .routine-action { font-size: 0; }
+.routine[open] .routine-action::before { font-size: 0.76rem; }
+.routine[open] .details { margin-bottom: 12px; }
+
 .workout-card,
 .diet-card {
   padding: 18px;
