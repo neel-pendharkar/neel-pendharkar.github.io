@@ -10,7 +10,7 @@ function exerciseRow(exercise) {
 
   const count = document.createElement("strong");
   count.className = "exercise-count";
-  count.textContent = exercise.count;
+  count.textContent = `${exercise.count} ${exercise.unit.toLowerCase()}`;
 
   item.append(count, name);
   return item;
