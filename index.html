@@ -1,265 +1,50 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Neel Pendharkar — Music · Code · More</title>
-  <meta name="description" content="Torn between music and code, trying to bridge the two." />
-
-  <style>
-    :root{
-      --bg:#0f1115;
-      --card:#0f1720;
-      --muted:#9aa4b2;
-      --accent:#8be9fd;
-      --glass: rgba(255,255,255,0.04);
-      --radius:14px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      background: linear-gradient(180deg,#091018 0%, #081018 60%);
-      color:#e6eef6;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-      padding:40px 20px;
-    }
-
-    .container{max-width:980px;margin:0 auto;}
-
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-      margin-bottom:28px;
-    }
-    .brand{
-      display:flex;align-items:center;gap:12px;
-    }
-    .logo{
-      width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6ee7b7);
-      display:flex;align-items:center;justify-content:center;font-weight:700;color:#021018;font-family:serif
-    }
-    .name{font-weight:600;letter-spacing:0.2px}
-    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
-    nav a:hover{color:var(--accent)}
-
-    main{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap:22px;
-    }
-
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      padding:18px;
-      box-shadow: 0 6px 24px rgba(3,8,15,0.6);
-      border: 1px solid rgba(255,255,255,0.03);
-      backdrop-filter: blur(6px);
-    }
-
-    .hero{
-      display:flex;
-      gap:20px;
-      align-items:center;
-      padding:26px;
-    }
-    .hero .left{flex:1}
-    .hero h1{margin:0;font-size:28px;letter-spacing:-0.4px}
-    .hero p{margin:8px 0 0;color:var(--muted)}
-    .cta{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
-    .btn{background:var(--accent);color:#021018;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
-    .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(139,233,253,0.12)}
-
-    .grid-2{
-      display:grid;
-      grid-template-columns: 1fr 360px;
-      gap:18px;
-    }
-
-    .projects-list{display:flex;flex-direction:column;gap:12px}
-    .project{
-      padding:12px;border-radius:12px;background:var(--glass);
-      display:flex;flex-direction:column;gap:6px;
-    }
-    .project h4{margin:0;font-size:15px}
-    .project p{margin:0;color:var(--muted);font-size:14px}
-
-    .music-list{display:flex;flex-direction:column;gap:10px}
-    .track{display:flex;align-items:center;gap:12px;padding:10px;border-radius:10px;background:#071018;border:1px solid rgba(255,255,255,0.02)}
-    .track small{color:var(--muted)}
-
-    footer{margin-top:12px;text-align:center;color:var(--muted);font-size:13px;padding:10px 0}
-
-    /* responsive */
-    @media (max-width:880px){
-      .grid-2{grid-template-columns:1fr}
-      .hero{flex-direction:column;align-items:flex-start}
-      nav{display:none}
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">N</div>
-        <div>
-          <div class="name">Neel Pendharkar</div>
-          <div style="font-size:12px;color:var(--muted)">Music · Code · Flow</div>
-        </div>
-      </div>
-
-      <nav aria-label="Main navigation">
-        <a href="#work">Projects</a>
-        <a href="#music">Music</a>
-        <a href="#reading">Reading</a>
-        <a href="#journal">Journal</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Neel Pendharkar's daily movement practice.">
+    <meta name="theme-color" content="#f3efdf">
+    <title>Move — Neel Pendharkar</title>
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script type="module" src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="name" href="/">NEEL PENDHARKAR</a>
+      <p>DAILY PRACTICE <span aria-hidden="true">↗</span></p>
     </header>
 
     <main>
-      <!-- HERO -->
-      <section class="card hero" id="home" aria-labelledby="intro-heading">
-        <div class="left">
-          <h1 id="intro-heading">Torn between music and code, trying to bridge the two.</h1>
-
-          <div class="cta">
-            <a class="btn" href="#work">Projects</a>
-            <a class="btn ghost" href="#music">Music</a>
-            <a class="btn ghost" href="#journal">Journal</a>
-          </div>
-        </div>
-
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">MOVE / BREATHE / REPEAT</p>
+        <h1 id="page-title">A little<br>every day.</h1>
+        <p class="lede">Nothing elaborate. Just a short routine, done with attention.</p>
       </section>
 
-      <!-- GRID: Ongoing Projects -->
-      <section class="card" id="work" aria-labelledby="work-heading">
-        <h3 id="work-heading">Ongoing Projects</h3>
-
-        <div class="grid-2" style="grid-template-columns: 1fr 1fr; margin-top:12px">
-
-          <!-- TECH -->
+      <section class="routine" aria-labelledby="routine-title">
+        <div class="routine-heading">
           <div>
-            <h4 style="color:var(--muted);font-weight:500;margin-bottom:8px">Tech</h4>
-
-            <div class="projects-list">
-              <article class="project">
-                <h4>Working at PTC</h4>
-                <p><b>Technical Lead / Mathcad DevOps</b></p>
-                <p>DevOps that scales and endures.</p>
-              </article>
-
-              <article class="project">
-                <h4>PyanoBuddy — A Piano Companion Python Script</h4>
-                <p>Trains your ear by giving you random notes to guess, with constraints. Needs MIDI input.</p>
-                <div style="margin-top:8px">
-                  <a href="https://github.com/neel-pendharkar/PyanoBuddy"
-                    style="color:var(--accent);text-decoration:none">
-                    View repo →
-                  </a>
-                </div>
-              </article>
-
-              <article class="project">
-                <h4>StygianStaves — Interactively Learn Sheet Music</h4>
-                <p>Trains your ability to find notes and chords on the piano. </p>
-                <p>Based on MIDI interaction.</p>
-                <div style="margin-top:8px">
-                  <a href="https://neel-pendharkar.github.io/stygian-staves/index.html"
-                    style="color:var(--accent);text-decoration:none">
-                    Try it out!
-                  </a>
-                </div>
-              </article>
-            </div>
+            <p class="eyebrow">TODAY'S SET</p>
+            <h2 id="routine-title">The routine</h2>
           </div>
-
-          <!-- MUSIC -->
-          <div id="music">
-            <h4 style="color:var(--muted);font-weight:500;margin-bottom:8px">Music</h4>
-
-            <div class="music-list">
-              <div class="track">
-                <div style="flex:1">
-                  <div style="font-weight:600">Count Stygian</div>
-                  <small>Raw Indian English Rock Music</small>
-                  <div>
-                    <a href="https://open.spotify.com/artist/3helJoW6FT7Y83tAaOdEUp?si=2mZ6mm4bRR2YGFs7bXNPaw"
-                      style="color:var(--accent);text-decoration:none">
-                      Listen on Spotify
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="track">
-                <div style="flex:1">
-                  <div style="font-weight:600">Asiir</div>
-                  <small>Raw Indian Hindi Rock Music</small>
-                  <div>
-                    <a href="https://open.spotify.com/artist/5f8IpiQjnWsIoXleaR2UIB?si=q51-bcXZSLWjUN961XJtNw"
-                      style="color:var(--accent);text-decoration:none">
-                      Listen on Spotify
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="track">
-                <div style="flex:1">
-                  <div style="font-weight:600">Bass-sick Boyz</div>
-                  <small>Experimental deep-dubstep</small>
-                  <div>
-                    <a href="https://soundcloud.com/basssickboyz/arrival"
-                      style="color:var(--accent);text-decoration:none">
-                      Listen on Soundcloud
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="progress" aria-live="polite">
+            <span id="progress-count">0 / 0</span>
+            <span>COMPLETE</span>
           </div>
-
         </div>
+
+        <ol id="workout-list" class="workout-list" aria-label="Workout exercises">
+          <li class="loading">Loading the routine…</li>
+        </ol>
+
+        <button id="reset-button" class="reset" type="button" hidden>Reset today</button>
       </section>
-
-
-      <!-- Reading & Typing -->
-      <section class="card" id="reading" aria-labelledby="reading-heading">
-        <h3 id="reading-heading">Reading & Typing</h3>
-        <p><strong>Currently Typing:</strong> Frankenstein - Mary Shelley / The Time Machine - H.G. Wells</p>
-        <p><strong>Currently Reading:</strong> Macabre Tales - H. P. Lovecraft / Naruto - Masashi Kishimoto / The Happy Prince and Other Short Stories - Oscar Wilde </p>
-      </section>
-
-      <!-- Journal -->
-      <section class="card" id="journal" aria-labelledby="journal-heading">
-        <h3 id="journal-heading">Journal & notes</h3>
-        <p><a href="https://neelpendharkar.substack.com/" style="color:var(--accent);text-decoration:none"><strong>Substack</strong></a> — Half-Baked writings for the fully baked</p>
-      </section>
-
-      <!-- Typing Update -->
-      <section class="card" style="opacity:0.7;font-size:14px;text-align:center;padding:12px;margin-top:8px">
-        <div>Typed <em>Dr. Jekyll and Mr. Hyde</em> at an average speed of <strong>72 WPM 96.4% ACC</strong>.</div>
-      </section>
-
-
-      <!-- Contact -->
-      <section class="card" id="contact" aria-labelledby="contact-heading">
-        <h3 id="contact-heading">Contact</h3>
-        <p style="color:var(--muted)">At your own risk, <a href="mailto:neel.pendharkar@gmail.com" style="color:var(--accent)">email me.</a></p>
-      </section>
-
-      <footer class="card" role="contentinfo">
-        <div>Handle with care.</div>
-      </footer>
     </main>
-  </div>
-</body>
+
+    <footer>
+      <p>SHOW UP. THAT COUNTS.</p>
+      <p id="today"></p>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,11 @@
+{
+  "title": "Daily practice",
+  "exercises": [
+    { "id": "surya-namaskar", "name": "Surya Namaskar", "count": 30, "unit": "ROUNDS" },
+    { "id": "pushups", "name": "Push-ups", "count": 10, "unit": "REPS" },
+    { "id": "squats", "name": "Squats", "count": 10, "unit": "REPS" },
+    { "id": "situps", "name": "Sit-ups", "count": 10, "unit": "REPS" },
+    { "id": "crunches", "name": "Crunches", "count": 10, "unit": "REPS" },
+    { "id": "cycling-reverse", "name": "Cycling with reverse", "count": 5, "unit": "REPS" }
+  ]
+}
