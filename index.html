@@ -3,48 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Neel Pendharkar's daily movement practice.">
-    <meta name="theme-color" content="#f3efdf">
-    <title>Move — Neel Pendharkar</title>
+    <meta name="description" content="Neel Pendharkar's personal website.">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#111111">
+    <title>Neel Pendharkar</title>
     <link rel="stylesheet" href="assets/css/site.css">
     <script type="module" src="assets/js/app.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="name" href="/">NEEL PENDHARKAR</a>
-      <p>DAILY PRACTICE <span aria-hidden="true">↗</span></p>
+    <header class="topbar">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Neel Pendharkar</span>
+      </a>
     </header>
 
-    <main>
-      <section class="intro" aria-labelledby="page-title">
-        <p class="eyebrow">MOVE / BREATHE / REPEAT</p>
-        <h1 id="page-title">A little<br>every day.</h1>
-        <p class="lede">Nothing elaborate. Just a short routine, done with attention.</p>
-      </section>
-
-      <section class="routine" aria-labelledby="routine-title">
-        <div class="routine-heading">
+    <main class="content">
+      <section class="workout" aria-labelledby="workout-title">
+        <div class="section-heading">
           <div>
-            <p class="eyebrow">TODAY'S SET</p>
-            <h2 id="routine-title">The routine</h2>
-          </div>
-          <div class="progress" aria-live="polite">
-            <span id="progress-count">0 / 0</span>
-            <span>COMPLETE</span>
+            <p class="eyebrow">Routine</p>
+            <h1 id="workout-title">Workout schedule</h1>
           </div>
         </div>
-
-        <ol id="workout-list" class="workout-list" aria-label="Workout exercises">
-          <li class="loading">Loading the routine…</li>
-        </ol>
-
-        <button id="reset-button" class="reset" type="button" hidden>Reset today</button>
+        <ul id="workout-list" class="workout-list">
+          <li class="loading">Loading…</li>
+        </ul>
       </section>
     </main>
-
-    <footer>
-      <p>SHOW UP. THAT COUNTS.</p>
-      <p id="today"></p>
-    </footer>
   </body>
 </html>
