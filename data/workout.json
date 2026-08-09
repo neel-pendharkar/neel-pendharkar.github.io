@@ -10,6 +10,6 @@
     { "id": "bird-dog", "name": "Bird Dog", "count": 5, "unit": "REPS" },
     { "id": "dead-bug", "name": "Dead Bug", "count": 5, "unit": "REPS" },
     { "id": "glute-bridges", "name": "Glute Bridges", "count": 10, "unit": "REPS" },
-    { "id": "running", "name": "Running", "count": 10, "unit": "MIN" }
+    { "id": "running-sprinting", "name": "Running + Sprinting", "count": 500, "unit": "M" }
   ]
 }
