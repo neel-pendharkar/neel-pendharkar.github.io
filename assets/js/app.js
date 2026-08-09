@@ -1,18 +1,18 @@
 const list = document.querySelector("#workout-list");
 
 function exerciseRow(exercise) {
-  const item = document.createElement("li");
+  const item = document.createElement("div");
   item.className = "exercise";
 
   const name = document.createElement("span");
   name.className = "exercise-name";
   name.textContent = exercise.name;
 
-  const count = document.createElement("span");
+  const count = document.createElement("strong");
   count.className = "exercise-count";
-  count.textContent = `${exercise.count} ${exercise.unit.toLowerCase()}`;
+  count.textContent = exercise.count;
 
-  item.append(name, count);
+  item.append(count, name);
   return item;
 }
 
